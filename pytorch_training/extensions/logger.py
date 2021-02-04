@@ -28,7 +28,7 @@ class Logger(Extension):
         self.image_queue = multiprocessing.Queue()
 
         if self.master:
-            self.backup_code(backup_base_path, log_dir, exclusion_filters)
+            #self.backup_code(backup_base_path, log_dir, exclusion_filters)
             self.log_args(train_args, 'args.json')
             self.log_args(train_config, 'config.json')
 
